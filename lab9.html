@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAB09</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- เรียกใช้ไฟล์ CSS ของ Bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- เรียกใช้ไฟล์ JavaScript ของ Bootstrap -->
+</head>
+
+<body>
+    <h1 class="text-center fw-bold m-3">Lab 9 Bootstrap</h1>
+    <!-- ข้อความ h1 อยู่ตรงกลาง (ใช้ text-center) ตัวหนา (ใช้ fw-bold) และมี margin (ใช้ m-3) -->
+    <section class="container">
+        <!-- ใช้ container จัด layout ให้อยู่กึ่งกลางหน้าจอ -->
+        <div class="row">
+            <!-- เริ่มต้นแถว (ใช้ row) -->
+
+            <!-- 1 -->
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <!-- คอลัมน์: ขนาดหน้าจอ lg จะแสดง 3 ส่วน 4 คอลัมน์, ขนาดหน้าจอ md จะแสดง 6 ส่วน 2 คอลัมน์, ขนาดหน้าจอ sm จะแสดง 12 ส่วน 1 คอลัมน์ -->
+                <div class="card mt-4 bg-dark text-light">
+                    <!-- card มีพื้นหลังสี dark (ใช้ bg-dark) ตัวอักษรสี light (ใช้ text-light) มี margin-top คือ 4 (ใช้ mt-4) -->
+                    <img src="giyu.png" class="rounded m-2" alt="giyu tomioka">
+                    <!-- แทรกรูป giyu.png, รูปมีขอบมน (ใช้ rounded), margin รอบรูป (ใช้ m-2)-->
+                    <div class="card-body">
+                        <!-- เนื้อหาภายใน card -->
+                        <h1 class="card-title">column 1</h1>
+                        <!-- ชื่อ card -->
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium minus
+                            enim quod
+                            suscipit fuga harum perspiciatis eveniet.</p>
+                        <!-- ข้อความ lorem -->
+                        <a href="https://www.google.com/" class="btn btn-success" target="_blank">Go to Google</a>
+                        <!-- ปุ่มสี success (ใช้ btn-success) ลิงก์ไป Google โดยมีการเปิดในแท็บใหม่ -->
+                        <a href="#" class="btn btn-danger disabled">Link</a>
+                        <!-- ปุ่มสี danger (ใช้ btn-danger) แต่ไม่สามารถกดได้ (ใช้ disabled) -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2 -->
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <!-- คอลัมน์: ขนาดหน้าจอ lg จะแสดง 3 ส่วน 4 คอลัมน์, ขนาดหน้าจอ md จะแสดง 6 ส่วน 2 คอลัมน์, ขนาดหน้าจอ sm จะแสดง 12 ส่วน 1 คอลัมน์ -->
+                <div class="card mt-4 bg-dark text-light">
+                    <!-- card มีพื้นหลังสี dark (ใช้ bg-dark) ตัวอักษรสี light (ใช้ text-light) มี margin-top คือ 4 (ใช้ mt-4) -->
+                    <img src="giyu.png" class="rounded-circle bg-light m-2 p-1" alt="giyu tomioka">
+                    <!-- แทรกรูป giyu.png, รูปเป็นวงกลม (ใช้ rounded-circle), มีพื้นหลังสี light (ใช้ bg-light), margin รอบรูป (ใช้ m-2), padding รอบรูป (ใช้ p-1) -->
+                    <div class="card-body">
+                        <!-- เนื้อหาภายใน card -->
+                        <h1 class="card-title">column 2</h1>
+                        <!-- ชื่อ card -->
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium minus
+                            enim quod
+                            suscipit fuga harum perspiciatis eveniet.</p>
+                        <!-- ข้อความ lorem -->
+                        <a href="https://www.google.com/" class="btn btn-success" target="_blank">Go to Google</a>
+                        <!-- ปุ่มสี success (ใช้ btn-success) ลิงก์ไป Google โดยมีการเปิดในแท็บใหม่ -->
+                        <a href="#" class="btn btn-danger disabled">Link</a>
+                        <!-- ปุ่มสี danger (ใช้ btn-danger) แต่ไม่สามารถกดได้ (ใช้ disabled) -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3 -->
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <!-- คอลัมน์: ขนาดหน้าจอ lg จะแสดง 3 ส่วน 4 คอลัมน์, ขนาดหน้าจอ md จะแสดง 6 ส่วน 2 คอลัมน์, ขนาดหน้าจอ sm จะแสดง 12 ส่วน 1 คอลัมน์ -->
+                <div class="card mt-4 bg-dark text-light">
+                    <!-- card มีพื้นหลังสี dark (ใช้ bg-dark) ตัวอักษรสี light (ใช้ text-light) มี margin-top คือ 4 (ใช้ mt-4) -->
+                    <img src="giyu.png" class="img-thumbnail m-2 p-1" alt="giyu tomioka">
+                    <!-- แทรกรูป giyu.png, มีขอบรอบรูป (ใช้ img-thumbnail), margin รอบรูป (ใช้ m-2), padding รอบรูป (ใช้ p-1) -->
+                    <div class="card-body">
+                        <!-- เนื้อหาภายใน card -->
+                        <h1 class="card-title">column 3</h1>
+                        <!-- ชื่อ card -->
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium minus
+                            enim quod
+                            suscipit fuga harum perspiciatis eveniet.</p>
+                        <!-- ข้อความ lorem -->
+                        <a href="https://www.google.com/" class="btn btn-success" target="_blank">Go to Google</a>
+                        <!-- ปุ่มสี success (ใช้ btn-success) ลิงก์ไป Google โดยมีการเปิดในแท็บใหม่ -->
+                        <a href="#" class="btn btn-danger disabled">Link</a>
+                        <!-- ปุ่มสี danger (ใช้ btn-danger) แต่ไม่สามารถกดได้ (ใช้ disabled) -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4 -->
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <!-- คอลัมน์: ขนาดหน้าจอ lg จะแสดง 3 ส่วน 4 คอลัมน์, ขนาดหน้าจอ md จะแสดง 6 ส่วน 2 คอลัมน์, ขนาดหน้าจอ sm จะแสดง 12 ส่วน 1 คอลัมน์ -->
+                <div class="card mt-4 bg-dark text-light">
+                    <!-- card มีพื้นหลังสี dark (ใช้ bg-dark) ตัวอักษรสี light (ใช้ text-light) มี margin-top คือ 4 (ใช้ mt-4) -->
+                    <img src="giyu.png" class="img-fluid m-2 p-1" alt="giyu tomioka">
+                    <!-- แทรกรูป giyu.png, รูปมีความ responsive (ใช้ img-fluid), margin รอบรูป (ใช้ m-2), padding รอบรูป (ใช้ p-1) -->
+                    <div class="card-body">
+                        <!-- เนื้อหาภายใน card -->
+                        <h1 class="card-title">column 4</h1>
+                        <!-- ชื่อ card -->
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium minus
+                            enim quod
+                            suscipit fuga harum perspiciatis eveniet.</p>
+                        <!-- ข้อความ lorem -->
+                        <a href="https://www.google.com/" class="btn btn-success" target="_blank">Go to Google</a>
+                        <!-- ปุ่มสี success (ใช้ btn-success) ลิงก์ไป Google โดยมีการเปิดในแท็บใหม่ -->
+                        <a href="#" class="btn btn-danger disabled">Link</a>
+                        <!-- ปุ่มสี danger (ใช้ btn-danger) แต่ไม่สามารถกดได้ (ใช้ disabled) -->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</body>
+
+</html>
